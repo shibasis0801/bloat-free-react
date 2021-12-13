@@ -1,0 +1,12 @@
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "App Perf"
+include ':app'
+
+apply from: file("./node_modules/@react-native-community/cli-platform-android/native_modules.gradle");
+applyNativeModulesSettingsGradle(settings)

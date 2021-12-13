@@ -7,14 +7,19 @@ import java.lang.reflect.InvocationTargetException
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
+import com.facebook.react.PackageList
 
-class MainApplication : Application(), ReactApplication {
+
+
+
+class BenchmarkApplication : Application(), ReactApplication {
     private val reactNativeHost = object : ReactNativeHost(this) {
         override fun getJSMainModuleName() = "index"
         override fun getUseDeveloperSupport() = BuildConfig.DEBUG
 
-        override fun getPackages(): MutableList<ReactPackage> {
-            return mutableListOf()
+        override fun getPackages(): List<ReactPackage> {
+            val packages: List<ReactPackage> = PackageList(this).packages
+            return packages
         }
     }
 

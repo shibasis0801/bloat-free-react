@@ -9,9 +9,6 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.PackageList
 
-
-
-
 class BenchmarkApplication : Application(), ReactApplication {
     private val reactNativeHost = object : ReactNativeHost(this) {
         override fun getJSMainModuleName() = "index"

@@ -1,0 +1,16 @@
+{
+  "name": "bloat-free-multi-react",
+  "private": true,
+  "version": "1.0.0",
+  "description": "React for web and app with minimum bloat",
+  "repository": "https://github.com/shibasis0801/MobileBenchmark.git",
+  "author": "Shibasis Patnaik <shibasis0801@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf app/node_modules && rimraf web/node_modules && rimraf shared/node_modules && rimraf node_modules",
+    "install": "cd app && yarn && cd ../web && yarn && cd ../shared && yarn"
+  },
+  "devDependencies": {
+    "rimraf": "3.0.2"
+  }
+}

@@ -1,7 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    println(rootProject.projectDir.absolutePath)
     ext {
         compose_version = '1.0.1'
+        reactNativeAndroidRoot = new File("$rootDir/node_modules/react-native/android")
     }
     repositories {
         google()
